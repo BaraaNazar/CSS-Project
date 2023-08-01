@@ -22,6 +22,7 @@ header section {
   align-items: center;
   justify-content: center;
   padding: 10px;
+  text-align: center;
 }
 .flex-row {
   display: flex;
@@ -57,6 +58,10 @@ section ul li {
 }
 .white-background {
   background-color: #f9faf8;
+}
+.main-image-width {
+  width: 500px;
+  height: auto;
 }
 .images-width,
 section ul li img {
@@ -250,6 +255,10 @@ section ul li p {
     margin: 5px;
     font-size: 12px;
   }
+  .main-image-width {
+    width: 300px;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 400px) {
   header section {
@@ -279,5 +288,9 @@ section ul li p {
     margin: 5px;
     font-size: 12px;
     width: 150px;
+  }
+  .main-image-width {
+    width: 200px;
+    height: auto;
   }
 }
