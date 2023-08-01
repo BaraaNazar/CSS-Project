@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto:wght@300&display=swap');
-
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: Roboto;
   margin: 0;
@@ -147,6 +149,7 @@ main section img {
   align-items: center;
   justify-content: space-around;
   width: 50vw;
+  padding: 10px;
   border-radius: 10px;
 }
 .callToAction-header,
@@ -160,6 +163,7 @@ main section img {
 }
 .callToAction-button {
   border: solid;
+  margin: 5px;
   border-width: 2px;
   border-color: #f9faf8;
 }
@@ -172,7 +176,21 @@ footer {
 section ul li p {
   color: #1f2937;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+  .callToAction-div {
+    width: fit-content;
+  }
+  .callToAction-div {
+    width: 50vw;
+    padding: 10px;
+    font-size: 8px;
+  }
+  .callToAction-button {
+    margin: 5px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 650px) {
   body {
     padding-left: 0px;
     padding-right: 0px;
@@ -231,5 +249,35 @@ section ul li p {
   .callToAction-button {
     margin: 5px;
     font-size: 12px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header section {
+    padding: 0px;
+  }
+  header nav ul li,
+  section ul li {
+    list-style: none;
+    margin-right: 0px;
+    font-size: 12px;
+    padding-right: 10px;
+  }
+  .information-header {
+    font-size: 18px;
+  }
+  ul {
+    padding: 0px;
+  }
+  .quote-font {
+    font-size: 18px;
+  }
+  .callToAction-div {
+    width: 90vw;
+    padding: 10px;
+  }
+  .callToAction-button {
+    margin: 5px;
+    font-size: 12px;
+    width: 150px;
   }
 }
