@@ -29,7 +29,7 @@ h1 {
 
 .our-story-div {
     width: 100%;
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -37,17 +37,20 @@ h1 {
     font-family: "Roboto";
     background-color: #1f2937;
     color: white;
+    padding-top: 30px;
 }
 
 h2 {
     font-size: 48px;
     font-weight: bolder;
     font-family: "Roboto";
+    margin: 0;
 }
 
 .transparent-div {
     max-width: 80%;
     width: 100%;
+    padding-bottom: 30px;
 }
 
 @media (max-width:760px) {
@@ -66,13 +69,15 @@ h2 {
     width: 100%;
     display: grid;
     place-items: center;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    /* padding-bottom: 50px;
+    padding-top: 50px; */
+    /* margin: 0; */
 }
 
 .inside-our-team-div {
     max-width: 80%;
     width: 100%;
+    /* height: auto; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -83,7 +88,8 @@ h3 {
     font-size: 48px;
     font-weight: bolder;
     font-family: "Roboto";
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
+    margin: 0;
 }
 
 .card-divs {
@@ -94,7 +100,11 @@ h3 {
     justify-content: space-around;
     text-align: center;
     font-family: "Roboto";
-    color: #1f2937;
+    margin: 0;
+}
+.color-card-paragraph{
+    color: #1f2937 ;
+
 }
 
 .img-div {
