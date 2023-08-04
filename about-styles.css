@@ -58,10 +58,25 @@ h2 {
         height: 600px;
     }
 }
+@media (max-width:560px) {
+    .our-story-div {
+        height: 750px;
+    }
+}
 
 @media (max-width:450px) {
     .our-story-div {
         height: 900px;
+    }
+}
+@media (max-width:360px) {
+    .our-story-div {
+        height: 1000px;
+    }
+}
+@media (max-width:320px) {
+    .our-story-div {
+        height: 1100px;
     }
 }
 
@@ -72,6 +87,8 @@ h2 {
     /* padding-bottom: 50px;
     padding-top: 50px; */
     /* margin: 0; */
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .inside-our-team-div {
@@ -90,6 +107,7 @@ h3 {
     font-family: "Roboto";
     /* padding-bottom: 50px; */
     margin: 0;
+    padding-bottom: 30px;
 }
 
 .card-divs {
