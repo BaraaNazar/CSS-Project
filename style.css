@@ -17,7 +17,6 @@ header {
   padding-bottom: 10px;
   position: sticky;
   top: 0;
-
 }
 
 header nav {
@@ -72,7 +71,7 @@ section ul li {
   padding-bottom: 80px;
 }
 
-@media (max-width:450px) {
+@media (max-width: 450px) {
   header nav {
     gap: 10px;
   }
@@ -87,7 +86,7 @@ section ul li {
   }
 }
 
-@media (max-width:550px) {
+@media (max-width: 550px) {
   .quote-background {
     font-size: 22px;
   }
@@ -119,7 +118,6 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #1f2937;
-
 }
 
 .outside-header-div {
@@ -152,7 +150,7 @@ h1 {
   margin-top: 100px;
 }
 
-@media (max-width:1180px) {
+@media only screen and (max-width: 1180px) {
   section {
     justify-content: center;
     flex-wrap: wrap;
@@ -163,9 +161,11 @@ h1 {
   }
 
   h1 {
-    margin-top: 0
+    margin-top: 0;
   }
-
+  .width-main-img {
+    width: 100%;
+  }
 }
 
 .second-section {
@@ -176,7 +176,6 @@ h1 {
   justify-content: space-around;
   align-items: center;
   justify-content: center;
-
 }
 
 .container-div-for-pics {
@@ -215,7 +214,6 @@ h1 {
   width: 100%;
 }
 
-
 .signUp-button {
   background-color: #3882f6;
   width: 100px;
@@ -224,7 +222,6 @@ h1 {
   color: #f9faf8;
   border-radius: 8px;
   border: hidden;
-
 }
 
 .information-header {
@@ -237,8 +234,8 @@ h2 {
   color: #1f2937;
   padding: 20px;
 }
-aside p{
-  color:white;
+aside p {
+  color: white;
 }
 
 .quote-width {
@@ -260,7 +257,6 @@ aside p{
   background-color: white;
   padding-top: 50px;
   padding-bottom: 50px;
-
 }
 
 .callToAction-div {
