@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Roboto';
   margin: 0;
@@ -21,8 +22,10 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+
   flex-wrap: wrap-reverse;
   padding: 0;
+
 }
 
 h1 {
@@ -65,6 +68,7 @@ h1 {
 .aside {
   color: #1f2937;
   background-color: #e5e7eb;
+
 }
 
 .hello-email {
@@ -92,10 +96,14 @@ h1 {
 
 .aside {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .button-send {
   padding: 0.8rem 2.5rem;
+  border: 1px solid #f9faf8;
   border-radius: 1rem;
   background-color: #3882f6;
   color: #fff;
@@ -115,18 +123,19 @@ h1 {
   cursor: pointer;
   justify-content: center;
   padding-bottom: 40px;
+
 }
 
 .btn {
   display: inline-block;
   background: none;
-  font-size: 1.7rem;
+  font-size: 1rem;
   font-family: inherit;
   border: none;
   color: #e5e7eb;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   cursor: pointer;
   transition: all 0.3s;
   font-weight: 600;
@@ -137,6 +146,7 @@ h1 {
 @media (max-width:550px) {
   .image-person {
     width: 500px;
+
   }
 }
 @media (max-width:500px) {
