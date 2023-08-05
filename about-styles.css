@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
-
 main {
     max-width: 100vw;
     width: 100%;
@@ -45,6 +43,7 @@ h2 {
     font-weight: bolder;
     font-family: "Roboto";
     margin: 0;
+    color: white;
 }
 
 .transparent-div {
@@ -53,48 +52,19 @@ h2 {
     padding-bottom: 30px;
 }
 
-@media (max-width:760px) {
-    .our-story-div {
-        height: 600px;
-    }
-}
-@media (max-width:560px) {
-    .our-story-div {
-        height: 750px;
-    }
-}
-
-@media (max-width:450px) {
-    .our-story-div {
-        height: 900px;
-    }
-}
-@media (max-width:360px) {
-    .our-story-div {
-        height: 1000px;
-    }
-}
-@media (max-width:320px) {
-    .our-story-div {
-        height: 1100px;
-    }
-}
-
 .our-team-div {
     width: 100%;
-    display: grid;
-    place-items: center;
-    /* padding-bottom: 50px;
-    padding-top: 50px; */
-    /* margin: 0; */
-    padding-top: 30px;
-    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .inside-our-team-div {
     max-width: 80%;
     width: 100%;
-    /* height: auto; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -105,7 +75,6 @@ h3 {
     font-size: 48px;
     font-weight: bolder;
     font-family: "Roboto";
-    /* padding-bottom: 50px; */
     margin: 0;
     padding-bottom: 30px;
 }
@@ -119,9 +88,11 @@ h3 {
     text-align: center;
     font-family: "Roboto";
     margin: 0;
+    overflow: hidden;
 }
-.color-card-paragraph{
-    color: #1f2937 ;
+
+.color-card-paragraph {
+    color: #1f2937;
 
 }
 
@@ -155,10 +126,4 @@ h3 {
     height: 100%;
     width: auto;
     margin-left: -70px;
-}
-
-@media (max-width:780px) {
-    .inside-our-team-div {
-        max-width: 60%;
-    }
 }
