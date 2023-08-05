@@ -1,133 +1,221 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto:wght@300&display=swap');
+
 * {
   box-sizing: border-box;
 }
-body {
-  font-family: Roboto;
-  margin: 0;
-}
-.dark-background {
-  background-color: #1f2937;
-}
-header section {
+
+header {
+  max-width: 100vw;
   width: 100%;
-  height: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
   display: flex;
-  align-items: center;
-}
-.flex-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-}
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  background-color: #1f2937;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+
 }
 
-.logo {
-  height: 34px;
-  width: auto;
+header nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
 }
-.top-bottom-padding {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.inoformation-top-bottom-padding {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-section a {
-  font-size: 24px;
-  color: #f9faf8;
-  padding: 10px;
-}
+
 section a,
 header nav li a {
   text-decoration: none;
   color: white;
 }
+
 header nav li a:hover {
   text-decoration: underline;
 }
-nav-width {
-  width: auto;
-}
+
 header nav li,
 section ul li {
   list-style: none;
   font-size: 18px;
   color: #e5e7eb;
 }
-header nav {
-  padding-left: 25px;
-  padding-right: 25px;
+
+.refubook-logo {
+  margin: 0;
+  padding: 0;
+  font-size: 29px;
+  text-decoration: none;
 }
-header nav li {
-  padding: 10px;
-}
-.white-background {
-  background-color: #f9faf8;
-}
-.main-items-padding {
+
+.quote-background {
   width: 100%;
-  padding-left: 50px;
-}
-main section picture {
-  width: 500px;
-  height: auto;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-}
-
-main section img {
-  width: 350px;
-  height: auto;
-  padding-right: 30px;
-}
-
-section ul li figure img {
-  width: 200px;
-  height: auto;
-}
-
-body section ul {
-  width: 100%;
-  height: auto;
+  background-color: #e5e7eb;
+  color: #1f2937;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 36px;
+  margin: 0;
+}
+
+.main-items-padding {
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  padding-bottom: 80px;
+}
+
+@media (max-width:450px) {
+  header nav {
+    gap: 10px;
+  }
+
+  header nav li,
+  section ul li {
+    font-size: 12px;
+  }
+
+  .refubook-logo {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:550px) {
+  .quote-background {
+    font-size: 22px;
+  }
+}
+
+header p {
+  margin: 0;
+  font-size: 29px;
+  text-decoration: none;
+  color: white;
+}
+
+.refubook-logo a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: 'Roboto';
+  margin: 0;
+}
+
+.outside-div {
+  max-width: 100vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f2937;
+
+}
+
+.outside-header-div {
+  max-width: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  width: 80%;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
   flex-wrap: wrap;
 }
-body section ul li {
-  width: 200px;
-  margin: 10px;
+
+.logo {
+  height: 34px;
+  width: auto;
 }
+
+h1 {
+  margin-top: 100px;
+}
+
+@media (max-width:1180px) {
+  section {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main-items-padding {
+    padding: 0;
+  }
+
+  h1 {
+    margin-top: 0
+  }
+
+}
+
+.second-section {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container-div-for-pics {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+figure {
+  width: 150px;
+}
+
 .test {
   border: 2px solid #3882f6;
   border-radius: 8px;
+  width: 180px;
+  height: 120px;
 }
+
 section ul li a {
   font-size: 14px;
   color: #1f2937;
 }
 
-section div h1 {
+h1 {
   font-size: 48px;
   font-weight: bolder;
   color: #f9faf8;
 }
-section div p {
+
+#section-div-p {
   font-size: 18px;
   color: #f9faf8;
+  max-width: 400px;
+  width: 100%;
 }
+
+
 .signUp-button {
   background-color: #3882f6;
   width: 100px;
@@ -136,62 +224,70 @@ section div p {
   color: #f9faf8;
   border-radius: 8px;
   border: hidden;
+
 }
 
 .information-header {
+  text-align: center;
+}
+
+h2 {
   font-size: 36px;
   font-weight: bolder;
   color: #1f2937;
+  padding: 20px;
 }
-.quote-background {
-  background-color: #e5e7eb;
-  color: #1f2937;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+aside p{
+  color:white;
 }
-.quote-font {
-  font-style: italic;
-  font-weight: lighter;
-  font-size: 36px;
-}
+
 .quote-width {
   width: 70%;
-  padding: 50px;
+  border: none;
 }
+
 .quote-author {
   font-weight: 900;
   display: flex;
   justify-content: end;
   width: 100%;
 }
+
 .callToAction-section {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
 }
+
 .callToAction-div {
   background-color: #3882f6;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 50vw;
-  padding: 10px;
+  max-width: 50vw;
+  width: 100%;
+  padding: 30px;
   border-radius: 10px;
+  flex-wrap: wrap;
 }
+
 .callToAction-header,
 .callToAction-paragraph {
   font-size: 18px;
   font-weight: 900;
   color: #f9faf8;
+  margin: 0;
 }
+
 .callToAction-paragraph {
   font-weight: lighter;
 }
+
 .callToAction-button {
   border: solid;
   margin: 5px;
@@ -199,159 +295,15 @@ section div p {
   font-size: 14px;
   border-color: #f9faf8;
 }
+
 footer {
   width: 100%;
   color: #f9faf8;
   display: flex;
   justify-content: center;
+  background-color: #1f2937;
 }
+
 section ul li p {
   color: #1f2937;
-}
-
-@media only screen and (max-width: 1080px) {
-  .quote-width {
-    width: 70%;
-    padding: 50px;
-    margin: 0;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .callToAction-div {
-    width: fit-content;
-  }
-  .callToAction-div {
-    width: 50vw;
-    padding: 10px;
-    font-size: 8px;
-  }
-  .callToAction-button {
-    margin: 5px;
-    font-size: 12px;
-  }
-  .quote-width {
-    width: 100%;
-    padding: 50px;
-  }
-}
-@media only screen and (max-width: 650px) {
-  body {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  header section {
-    width: auto;
-    margin: 0;
-  }
-  .main-items-padding {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  header nav ul li {
-    font-size: 10px;
-  }
-
-  section div h1 {
-    padding-top: 20px;
-    font-size: 24px;
-  }
-
-  main .flex-row {
-    flex-direction: column;
-  }
-  main section img {
-    width: 250px;
-  }
-  .information-header {
-    font-size: 24px;
-  }
-  .quote-font {
-    font-size: 24px;
-  }
-  .quote-width {
-    padding: 50px;
-    width: 100%;
-  }
-  .callToAction-div {
-    width: fit-content;
-  }
-  .callToAction-div {
-    width: 90vw;
-    padding: 10px;
-    font-size: 8px;
-  }
-  .callToAction-button {
-    margin: 5px;
-    font-size: 12px;
-  }
-  .main-image-width {
-    width: 300px;
-    height: auto;
-  }
-  main section picture {
-    width: auto;
-  }
-  body header nav {
-    width: 250px;
-  }
-  header.flex-row {
-    justify-content: space-between;
-    width: 100%;
-  }
-  header nav li {
-    padding: 3px;
-    font-size: 18px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  header section {
-    padding: 0px;
-  }
-  header nav ul li,
-  section ul li {
-    list-style: none;
-    margin-right: 0px;
-    font-size: 12px;
-    padding-right: 10px;
-  }
-  .information-header {
-    font-size: 18px;
-  }
-  ul {
-    padding: 0px;
-  }
-  .quote-font {
-    font-size: 18px;
-  }
-  .callToAction-div {
-    width: 90vw;
-    padding: 10px;
-  }
-  .callToAction-button {
-    margin: 5px;
-    font-size: 12px;
-    width: 150px;
-  }
-  .main-image-width {
-    width: 200px;
-    height: auto;
-  }
-  body header nav {
-    width: 250px;
-  }
-  header.flex-row {
-    justify-content: space-between;
-    width: 100%;
-  }
-  main section picture {
-    width: auto;
-  }
-  header nav li {
-    padding: 5px;
-    font-size: 12px;
-  }
-  header section a {
-    font-size: 12px;
-  }
 }
