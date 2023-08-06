@@ -1,6 +1,5 @@
-
 body {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   margin: 0;
   color: #fff;
   background-color: #1f2937;
@@ -10,7 +9,6 @@ body {
   width: 100%;
   display: flex;
   background-color: #1f2937;
-  ;
   justify-content: space-around;
   overflow: hidden;
   flex-wrap: wrap-reverse;
@@ -25,7 +23,6 @@ body {
 
   flex-wrap: wrap-reverse;
   padding: 0;
-
 }
 
 h1 {
@@ -62,17 +59,14 @@ h1 {
   font-style: italic;
   margin: 0;
   padding: 100px;
-
 }
 
 .aside {
   color: #1f2937;
   background-color: #e5e7eb;
-
 }
 
 .hello-email {
-
   height: 4rem;
   width: 100%;
   border-radius: 2rem;
@@ -83,7 +77,7 @@ h1 {
 }
 
 .hello-message {
-  height: 24rem;
+  height: 18rem;
   width: 100%;
   font-size: 22px;
   padding-top: 10px;
@@ -108,7 +102,7 @@ h1 {
   background-color: #3882f6;
   color: #fff;
   width: 10rem;
-  margin: 0.5rem auto;
+  margin: 0 auto;
   cursor: pointer;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
 }
@@ -122,8 +116,7 @@ h1 {
   list-style: none;
   cursor: pointer;
   justify-content: center;
-  padding-bottom: 40px;
-
+  padding: 30px;
 }
 
 .btn {
@@ -135,37 +128,35 @@ h1 {
   color: #e5e7eb;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
-  margin-top: 1.5rem;
+  margin-bottom: 1rem;
   cursor: pointer;
   transition: all 0.3s;
   font-weight: 600;
   align-self: center;
-  padding-top: 40px;
+  padding-top: 0px;
 }
 
-@media (max-width:550px) {
+@media (max-width: 550px) {
   .image-person {
     width: 500px;
-
   }
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .image-person {
     width: 450px;
   }
 }
-@media (max-width:450px) {
+@media (max-width: 450px) {
   .image-person {
     width: 400px;
   }
 }
 
-@media (max-width:420px) {
+@media (max-width: 420px) {
   .para2 {
     font-size: 26px;
   }
   .image-person {
     width: 300px;
-
   }
 }
